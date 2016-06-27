@@ -10,7 +10,9 @@ No presentation layer markup or JS should be contained within the API implementa
 
 ## Usage
 
-git clone https://github.com/sebcat/go-apidemo
-cd go-apidemo
-go run main.go
-\# open http://127.0.0.1:8080/ in web browser
+````
+    git clone https://github.com/sebcat/go-apidemo
+    cd go-apidemo
+    go run main.go
+    open http://127.0.0.1:8080/ in web browser
+````

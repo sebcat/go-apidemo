@@ -15,14 +15,14 @@
   req.onreadystatechange = function() {
     console.log(req);
     if (req.readyState == 4 && req.status === 200) {
-	  var box = document.getElementById("string-box");
+      var box = document.getElementById("string-box");
       var strs = JSON.parse(req.responseText);
-	  for (i=0; i<strs.length; i++) {
-	    var p = document.createElement("p");
-		p.appendChild(document.createTextNode(strs[i]));
-	    box.appendChild(p);
-	  }
-	}
+      for (i=0; i<strs.length; i++) {
+        var p = document.createElement("p");
+        p.appendChild(document.createTextNode(strs[i]));
+        box.appendChild(p);
+      }
+    }
   };
   req.send(null);
  </script>
